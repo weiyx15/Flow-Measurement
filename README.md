@@ -3,3 +3,5 @@ Use CV method to process the pictures of flow measuremnt device by camera, find 
 ## src
 ### myCut.m
 Algorithm Testing
+### myCut.py
+Rewrite **myCut.m** in python

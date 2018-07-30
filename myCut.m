@@ -14,7 +14,6 @@ end
 % figure(2);imshow(hh);
 sumH = sum(hh);             % 投影到横轴
 % figure(3);plot(sumH);
-ind1 = find(sumH>0);
 H1 = sumH(sumH>0);
 % 自适应调整左右（缺口在右）
 len_gap = floor(length(H1)*65/1755);
@@ -28,7 +27,7 @@ figure(4);plot(H1);
 % 固定刻度的坐标在数组const_mark
 diffH = diff(H1);
 % figure(5);plot(diffH);
-[diff_sort, ind] = sort(diffH);
+% [diff_sort, ind] = sort(diffH);
 % mark = [151,499,239,283,779,624,326,456,701,818,1326,369,935,973,1150,...
 %     1061,196,1591,541,662,740,857,896,1414,583,1503,413,1238];
 % mark = sort(mark);
